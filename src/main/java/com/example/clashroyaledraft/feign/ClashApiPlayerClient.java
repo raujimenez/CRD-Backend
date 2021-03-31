@@ -16,7 +16,9 @@ import java.util.Map;
 @FeignClient(value="clashapi",url="https://api.clashroyale.com/v1/")
 public interface ClashApiPlayerClient {
 
-    @RequestMapping(method=RequestMethod.GET, value="/players/{playertag}")
+    @RequestMapping(method = RequestMethod.GET,
+                    value = "/players/{playertag}",
+                    produces = "application/json")
     Player getPlayer(@RequestHeader Map<String, String> header,
-                            @PathVariable String playertag);
+                     @PathVariable String playertag);
 }
