@@ -1,6 +1,5 @@
 package com.example.clashroyaledraft.controller;
 
-import com.example.clashroyaledraft.dto.Card;
 import com.example.clashroyaledraft.dto.Player;
 import com.example.clashroyaledraft.feign.ClashApiPlayerClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
